@@ -1,0 +1,106 @@
+/*container*/
+.container{
+    
+    max-width:  1200px;
+    max-height:  1200px;
+}
+/*container*/
+.intro{
+    color: rgba(36, 82, 182, 0.582);
+    font-size: 150%;
+    text-shadow: 1px 1px 2px rgb(218, 165, 21), 0 0 1em  rgb(0, 255, 128);
+    
+}
+/*name*/
+.name{
+    color: rgba(0, 81, 255, 0.342);
+    font-size: 125%;
+    text-shadow: 1px 1px 1px rgb(206, 241, 4), 0 0 1em rgb(0, 255, 128);
+   
+}
+.text {
+    width: 600px;	height: 210px; /* Размеры */    
+    background: rgb(87, 252, 216); /* Цвет фона */
+    border: 2px solid rgb(8, 230, 211); /* Чёрная рамка */
+    border-radius: 0px; /* Радиус скругления */
+    
+}
+.changes{
+    position: absolute; /* Абсолютное позиционирование */
+    top: 420px; /* Положение от верхнего края */
+    left: 160px; /* Положение от левого края */
+}
+.image{
+    height: 200px;
+    width: 200px;
+    position: absolute; /* Абсолютное позиционирование */
+    top: 5px; /* Положение от верхнего края */
+    left: 400px; /* Положение от левого края */
+    margin: auto;
+}
+.randomButton{
+    position: absolute; /* Абсолютное позиционирование */
+    top: 490px; /* Положение от верхнего края */
+    left: 160px; /* Положение от левого края */
+}
+.ind1{
+    position: absolute; /* Абсолютное позиционирование */
+    margin-left: 35%;
+}
+
+/* Для супер пупер кнопочки */
+.btn{
+    top: 2px;
+    width: 178px;
+    font-size: 20px;
+    height: 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+.btn:before{
+    content: "";
+    background: linear-gradient(123deg,#dd304f,#581b98,#482ff7,#fc5185,#17b978,#ea5455,#2b1de8,#dd00f3,#dd00f3);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.btn:hover::before{
+    opacity: 1;
+}
+.btn:after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#111;
+    left: 0;
+    top: 0;
+    border-radius: 1px;
+}
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="цсс.css">
+    <title>Лабораторная работа 3</title>
+    <style>
+        body
+        {
+            /* background: url(assets/image/field.jpg); */
+            max-width:  1200px;
+            max-height:  1200px;
+        }   
+        a:hover
+        {
+            color: rgb(51, 196, 128); /* Цвет ссылки */ 
+        }
+    </style>
+</head>
+<body >
+    <!-- Индивидульное задание 1 -->
+    <form name="IndMax" class="ind1">
+        <p><b>Функция расчета максимума</b></p>
+        <input type="text" id="textMax1"><br/>
+        <input type="text" id="textMax2"><br/>
+        <button class="btn" type="button" id="btnMax" onclick="btnMAX()">Применить</button>
+        <p id="result">Результат</p>
+    </form>
+    <script src="Индивидуалка1.js"></script>
+    <!-- Индивидульное задание 1 -->
+    <!-- Индивидульное задание 2,3 -->
+    <script src="Индивидуалка2.js"></script>
+    <!-- Индивидульное задание 2,3 -->
+    <!-- Индивидульное задание 4 -->
+    <div class="container">
+        <div class="intro">
+            <h1>Резюме</h1>
+        </div>
+        <div class="name">
+            <h2><span id="SecondName"></span> Алексей <br>
+                Студент группы АДБ 18-08
+            </h2>
+            <div class="changes"><p><b>Ваше новая фамилия:</b><br>
+                <input type="text" value="" id="txt">
+                <button class="btn" type="button" onclick="rename()">Применить</button>
+            </div>
+        </div>
+        <form class="text" id="randomtext">
+            <h2>Анекдот:</h2>
+            <p>  
+                <a>Проблема с ПК, помогите!<br/>
+                    У меня запачкался компьютер.<br/>
+                    Нажимаю: Мой компьютер, а он не моет...
+            </a>
+        </p>
+    </form>
+        <div>
+            <img src="kLk6w5GivQk.jpg" class="image">
+            
+        </div>
+        <div name="random" class="randomButton"><p><b>Рандомный цвет</b><br>
+            <button class="btn" type="button" onclick="Color()">Меняй</button>
+        </div>
+        <script src="Индивидуалка4.js"></script>
+        <script src="Индивидуалка5.js"></script>
+        <!-- Индивидульное задание 4 -->
+    </div>
+</body>
+</html>
